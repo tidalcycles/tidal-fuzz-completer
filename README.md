@@ -1,2 +1,27 @@
 # fuzz-completer
-Autocoder agent producing Tidal patterns and atom-auto suggestion package
+
+Tidal autonomous code generator combined with the autocomplete package 
+
+
+## To run 
+
+* Git clone and add this repository to atom package directory ~/Users/yourname/.atom/packages
+
+* In thhe terminal, cd into repository>src
+
+* Run terminal command: runhaskell listen.hs
+
+* In atom, run ctl+y h to start
+
+* Type a $ symbol to receive suggestions
+
+* To exit, run ctrl + c in terminal
+
+
+## To-do
+
+- [ ] Mini-notation tokenisation and inclusion
+- [ ] Extend from bi-gram representation to n-gram 
+- [ ] Develop capabilities for machine evaluation of patterns
+- [ ] Develop a machine (artificial) aesthetic ?
+

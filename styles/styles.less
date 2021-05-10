@@ -1,0 +1,67 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+// looking at using this
+// https://github.com/richrace/highlight-selected
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+atom-text-editor {
+  .gutter .line-number {
+    &.gain {
+      background: linear-gradient(to right, rgba(255,0,0,1.0) 50%, rgba(255,0,0,1.0) 50%);
+    }
+  }
+
+  .highlight{
+    &.hint .region{
+      background-color: rgba(155, 149, 0, 0.6);
+    }
+
+    &.green .region {
+      background-color: rgba(0, 255, 0, 0.6);
+    }
+
+    &.blue .region {
+      background-color: rgb(0, 0, 255);
+      animation: fade-out 1s ease-out;
+      animation-fill-mode: forwards;
+    }
+
+    &.red .region {
+      background-color: rgba(255, 0, 0, 0.6);
+    }
+
+    &.fadeaway .region {
+      background-color: rgba(0, 0, 0, 0.0);
+    }
+  }
+
+  .editor .line {
+    transition:  background-color .8s ease-out;
+
+    &.line-highlight {
+      background-color: @background-color-highlight;
+    }
+
+    &.eval-flash {
+      color: @text-color-selected;
+      background-color: @background-color-selected;
+    }
+
+    &.eval-success {
+      color: @text-color-success;
+      background-color: fadeout(@background-color-success, 50%);
+    }
+  }
+}

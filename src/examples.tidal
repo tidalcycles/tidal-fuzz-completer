@@ -1,0 +1,15 @@
+d1 $ sound $ fast (rev 2) $ fast "3 4 5" "bd sn" 
+
+d1 $ fast 2 $ jux rev $ sound "bd sn"
+
+d1 $ (#) (vowel "a e i o u") $ sound $ fast 2 $ rev "bd sn"
+
+
+queryArc (slow "1 2" "a b" :: Pattern String) (Arc 0 4)
+
+
+let p1 = slow "1 2" "0 1" :: Pattern Double
+let p2 = "0 1" :: Pattern Double
+
+queryArc p1 (Arc 0 2)
+queryArc p2 (Arc 0 2)

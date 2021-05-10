@@ -1,0 +1,9 @@
+{
+    "atom-workspace atom-text-editor:not([mini])": {
+      "ctrl-y h": "myAutocomplete:get-highlights",
+      "ctrl-y r": "myAutocomplete:toggle-rms",
+      "shift-enter": "myAutocomplete:eval",
+      "cmd-enter": "myAutocomplete:eval-multi-line",
+      "ctrl-enter": "myAutocomplete:eval-multi-line"
+    }
+}
