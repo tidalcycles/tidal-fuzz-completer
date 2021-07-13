@@ -7,7 +7,7 @@ Tidal autonomous code generator combined with the autocomplete package
 
 * Git clone and add this repository to atom package directory ~/Users/yourname/.atom/packages
 
-* In thhe terminal, cd into repository>src
+* Open the terminal, cd into this repository>src
 
 * Run terminal command: runhaskell listen.hs
 
