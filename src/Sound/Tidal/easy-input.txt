@@ -1,5 +1,0 @@
-fast "3 4 5" (sound "bd sn")
-
-sound (rev (fast 1 (fast "3 4 5" (rev (rev (slow 1 "bd sn"))))))
-
-fast "3 4 5" (chop (fast "3 4 5" "3 4 5") (sound "bd sn"))
