@@ -28,8 +28,11 @@ Tidal autonomous agent "Fuzz" is a code generator combined with the autocomplete
 ## Citation
 ``
 @article{wilson2021autonomous,
+
   title={Autonomous Creation of Musical Pattern from Types and Models in Live Coding},
+  
   author={Wilson, E and Lawson, S and McLean, A and Stewart, J and others},
+  
   year={2021}
 }
 ``
